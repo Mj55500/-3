@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+body.dark-theme{
+  background-color: #121212;
+  color: #fff;
+  background-image: url('https://bogatyr.club/uploads/posts/2024-03/1710354414_bogatyr-club-robp-p-oboi-temnii-fon-1.jpg'); /* Фон для тёмной темы */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+body.dark-theme h1, body.dark-theme h2 {
+  color: #fff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+  }
+  h1, h2 {
+      font-size: 1.2em;
+  }
+}
